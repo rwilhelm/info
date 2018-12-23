@@ -1,0 +1,53 @@
+[package]
+authors = ["René <rene.wilhelm@gmail.com>"]
+name = "info"
+version = "0.1.0"
+
+[dependencies]
+error-chain = "0.12.0"
+forecast = "2.0.0"
+libpulse-binding = "2.4.0"
+mpd = "*"
+reqwest = "0.9.5"
+serde = "1.0.82"
+serde_derive = "1.0.82"
+serde_json = "1.0"
+systemstat = "0.1.3"
+
+[[bin]]
+name = "info"
+path = "src/main.rs"
+
+[[bin]]
+name = "cpu"
+path = "src/cpu.rs"
+
+[[bin]]
+name = "net"
+path = "src/net.rs"
+
+[[bin]]
+name = "mem"
+path = "src/mem.rs"
+
+[[bin]]
+name = "load"
+path = "src/load.rs"
+
+[[bin]]
+name = "sockets"
+path = "src/sockets.rs"
+
+[[bin]]
+name = "weather"
+path = "src/weather.rs"
+
+#[[bin]]
+#name = "pulseaudio"
+#path = "src/pulseaudio.rs"
+
+[[bin]]
+name = "bitcoin"
+path = "src/bitcoin.rs"
+
+
